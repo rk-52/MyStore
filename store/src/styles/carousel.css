@@ -1,0 +1,59 @@
+/* Carousel Styles */
+.carousel-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .overlay h3 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .overlay h5 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .overlay button {
+    background-color: #1976d2;
+    color: white;
+    padding: 12px 35px;
+    font-size: 18px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .overlay button:hover {
+    background-color: #1565c0;
+  }
+  

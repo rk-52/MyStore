@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid2, Typography } from "@mui/material";
 import ProductCard from "../components/ProductCard";
 import axios from "axios";
 
@@ -17,13 +17,13 @@ const Products = () => {
       <Typography variant="h4" align="center" gutterBottom>
         Products
       </Typography>
-      <Grid container spacing={3}>
+      <Grid2 container spacing={3}>
         {products.map((product) => (
-          <Grid item xs={12} sm={6} md={4} key={product.id}>
+          <Grid2 item xs={12} sm={6} md={4} key={product.id}>
             <ProductCard product={product} />
-          </Grid>
+          </Grid2>
         ))}
-      </Grid>
+      </Grid2>
     </Container>
   );
 };
